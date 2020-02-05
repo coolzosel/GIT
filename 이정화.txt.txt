@@ -1,0 +1,51 @@
+User@DESKTOP-F41JSUC MINGW64 /c/SIAT/Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   start.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@DESKTOP-F41JSUC MINGW64 /c/SIAT/Git (master)
+$ git add test.txt
+
+User@DESKTOP-F41JSUC MINGW64 /c/SIAT/Git (master)
+$ git add start.txt
+
+User@DESKTOP-F41JSUC MINGW64 /c/SIAT/Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   start.txt
+        new file:   test.txt
+
+
+User@DESKTOP-F41JSUC MINGW64 /c/SIAT/Git (master)
+$ git commit -m "add test.txt"
+[master 35a1ce2] add test.txt
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 test.txt
+
+User@DESKTOP-F41JSUC MINGW64 /c/SIAT/Git (master)
+$ git log
+commit 35a1ce25f28b8e56a289d0fecc827b22d45bf3e7 (HEAD -> master)
+Author: coolzosel <guest_2@hanmail.net>
+Date:   Wed Feb 5 12:00:06 2020 +0900
+
+    add test.txt
+
+commit ade4dcb59fb99ea5fc9ded113a9851050a6909fd
+Author: coolzosel <guest_2@hanmail.net>
+Date:   Wed Feb 5 11:40:02 2020 +0900
+
+    add start.txt
+
+User@DESKTOP-F41JSUC MINGW64 /c/SIAT/Git (master)
+$
